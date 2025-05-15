@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+      <%- include("./partials/header.ejs")%>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img class="d-block mx-lg-auto img-fluid" src="/images/home.jpg" alt="Blog Theme" width="400" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to Blogger</h1>
+            <p class="lead">Whether you're a passionate writer, an avid reader, or someone looking to connect through stories, we make it easy for you to create, read, and edit blogs that matter. Our platform is built to inspire creativity and foster meaningful conversations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Features</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">View Blogs</h3>
+              <p>Immerse yourself in a world of diverse ideas and unique voices. Browse through blogs on topics you love — whether it's travel, tech, food, personal growth, or everyday experiences.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Create Blogs</h3>
+              <p>Your voice deserves to be heard. Share your stories, insights, or ideas with our simple and powerful blog editor. No technical skills needed — just your words and your imagination.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Edit/Delete Blogs</h3>
+              <p>We believe your content should always be under your control. Manage your blogs effortlessly with options to update, refine, or remove them at any time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <%- include("./partials/footer.ejs")%>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <%- include("./partials/header.ejs")%>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Explore Blogs & Discover New Stories</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Welcome to the heart of our community — the place where ideas, stories, and experiences come alive. Whether you're looking for inspiration, insights, or a quick read over coffee, you’ll find a diverse collection of blogs here created by writers from all walks of life.
+            Browse through different categories, check out trending topics, or dive into the latest posts. Every click is a chance to discover something new.</p>
+        </div>
+      </div>
+
+      <div class="container pb-5">
+        <h3 class="text-center">Select one of the blogs from below to view it:</h3>
+        <ul class="list-group">
+            <li class="list-group-item text-center"><a href="./partials/Alien_Truth.ejs">Alien Truth</a></li>
+            <li class="list-group-item text-center"><a href="./partials/Beyond_Smart.ejs">Beyond Smart</a></li>
+            <li class="list-group-item text-center"><a href="./partials/Founder_Mode.ejs">Founder Mode</a></li>
+            <li class="list-group-item text-center"><a href="./partials/How_To_Get_New_Ideas.ejs">How To Get New Ideas</a></li>
+            <li class="list-group-item text-center"><a href="./partials/Putting_Ideas_Into_Words.ejs">Putting Ideas Into Words</a></li>
+            <li class="list-group-item text-center"><a href="./partials/The_Need_To_Read.ejs">The Need To Read</a></li>
+            <li class="list-group-item text-center"><a href="./partials/The_Reddits.ejs">The Reddits</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <ul class="list-group">
+        <% if(title.length > 0){ %>
+          <h3 class="text-center">Here are the blogs created by you:</h3>
+          <% for(var i=0;i<title.length;i++){ %>
+            <% var str1 = "./partials/submit" + i + ".ejs" %>
+            <li class="list-group-item text-center"><a href=<%=str1%>><%=title[i]%></a></li>
+          <% } %>
+        <%} %>
+        </ul>
+      </div>
+      <%-include("./partials/footer.ejs")%>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+</body>
+</html>
